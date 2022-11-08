@@ -1,0 +1,37 @@
+- JS is interpreted not compiled!
+- each browser has its own JS engine:
+    V8 - Chrome & Node.js 
+    SpiderMonkey - Firefox
+    JSCore - Safari 
+    Chakra - Microsoft Edge/IE
+
+- they implement the ECMAScript standard 
+
+
+JS types 
+ - dynamic typing 
+ - primative types (undefined, null, boolean, number, string, symbol [new])
+ - objects 
+
+Typecasting 
+    coercion - change the type 
+
+== vs ===
+    == - coerces the types 
+    === - requires equivalent types 
+
+Prototypal Inheritance 
+    functions that we can invoke on any non primative tha give us something else
+    ex: push, pop, map, sort, slice, ...
+
+    most primative types have object wrappers (String(), Number(), Boolean(), Object(), Symbol())
+    JS will automatically "box" (wrap) primative values so you have access to methods 
+    ex: 42.toString() -> Error 
+        const x = 42
+        x.toString() -> "42"
+        x.__proto__  -> [Number: 0]
+        x.instanceOf Number -> false
+
+    DO NOT CHANGE THE PROTOTYPE
+
+
