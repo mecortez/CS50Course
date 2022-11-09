@@ -34,4 +34,22 @@ Prototypal Inheritance
 
     DO NOT CHANGE THE PROTOTYPE
 
+Scope 
+    Variable lifetime
+        - Lexical scoping (var): from when they're declared until when their function ends 
+        - Block scoping (const, let): until next "}" is reached
+    Hoisting
+        function definitions are hoisted, but not lexically-scoped initializations, var are hoisted 
 
+JS engine 
+    first read the file, thene execute the file 
+
+    (if you declare a variable without var, let or const, is a global variable)
+
+The Global Object 
+    All variables and functions are actually parameters and methods on the global object
+        browser global object is the 'window' object
+        node.js global object is the 'global' object
+    
+Closures 
+    
