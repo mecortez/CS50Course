@@ -1,11 +1,11 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html, body {
-  background-color: #eee;
-  margin: 0;
-  padding: 0;
+  background-color: #A6CFD5;
 }
 
 ul {
@@ -24,21 +24,27 @@ ul {
 }
 
 .container {
-  max-width: 800px;
+  max-width: 80%;
   margin: 0 auto;
-  padding: 10px;
+  padding: 6% 0;
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background-color: #DBFCFF;
   height: 100vh;
 }
 
 .title, .controls, .button {
+  font-size: 3rem;
+  margin: 1.2rem;
   flex: none;
 }
 
 .button {
   padding: 10px 20px;
+  margin: 2.5rem;
+  font-size: 2rem;
+  background-color: #A6CFD5;
+  border-radius: 5px;
 }
 
 .todo-list {
